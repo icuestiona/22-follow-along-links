@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0; /* Important! */
+  font-family: sans-serif;
+  background: radial-gradient(
+    circle at 0.8% 3.1%,
+    rgb(255, 188, 224) 0%,
+    rgb(170, 165, 255) 46%,
+    rgb(165, 255, 205) 100.2%
+  );
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 500px;
+  font-size: 20px;
+  line-height: 2;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(97, 95, 95);
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+}
+
+.highlight {
+  transition: all 0.2s;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top: 0;
+  background: white;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 20px;
+  color: rgb(11, 9, 48);
+}
